@@ -147,6 +147,13 @@ ol {
     width: 300px;
 }
 
+.form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: #f3f4f6;
+    border-color: #dee2e6;
+}
+
 
 
 

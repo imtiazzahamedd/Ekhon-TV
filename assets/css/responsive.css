@@ -1,6 +1,19 @@
 @media (max-width: 768px) {
     .navbar-logo {
-        width: 20%;
+        width: 70px;
         height: auto;
+    }
+
+    .live p {
+        background-color: #ff0000;
+        color: white;
+        padding: 4px 10px;
+        font-size: 11px;
+        animation: wave-bounce 2s infinite ease-in-out;
+    }
+
+    .datetime {
+        font-size: 10px;
+        font-weight: 600;
     }
 }

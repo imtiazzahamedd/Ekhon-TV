@@ -17,19 +17,33 @@
 </head>
 
 <body>
-    <header class="shadow pt-md-3 pt-2 pb-0">
+    <header class="shadow pt-md-3 pt-2 pb-1 pb-md-0">
         <nav class="row g-3 align-items-stretch container mx-auto">
             <div class="col-md-2 col-12">
                 <section class="d-flex align-items-center justify-content-between">
-                    <div class="navbar-logo-container">
+                    <div class="navbar-logo-container flex-shrink-1">
                         <img src="https://ekhon.tv/logo.png" alt="" class="navbar-logo">
                     </div>
-                    <div class="d-md-none d-block">
-                        <i class="bi bi-list-nested"></i>
-                    </div>
+                    <section class="d-flex align-items-center gap-1 d-md-none">
+                        <div class="live">
+                            <p class="fw-semibold rounded-pill">সরাসরি</p>
+                        </div>
+                        <div>
+                            <p class="datetime"></p>
+                        </div>
+                    </section>
+                    <section class="d-flex align-items-center gap-2">
+                        <div class="d-md-none">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <div class="d-md-none d-block" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="bi bi-list fs-3"></i>
+                        </div>
+                    </section>
                 </section>
             </div>
-            <div class="col-7">
+            <div class="col-7 d-none d-md-block">
                 <div class="header-list d-none d-md-block">
                     <ul>
                         <li class="title-1s active"><i class="bi bi-house-door"></i>&nbsp; মূল পাতা</li>
@@ -38,7 +52,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-3 pb-md-3">
+            <div class="col-3 d-none d-md-block pb-md-3">
                 <div class="position-relative d-none d-md-block h-100 d-flex align-items-center">
                     <input type="search" class="form-control rounded-pill" placeholder="যা খুঁজতে চান..">
                     <i class="bi bi-search position-absolute translate-middle-y end-0 pe-3 top-50"></i>

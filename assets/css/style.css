@@ -158,8 +158,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .bi-search {
-    font-weight: 600 !important;
     -webkit-text-stroke: 0.9px;
+}
+.bi-list{
+    -webkit-text-stroke: 1.3px;
+}
+@keyframes wave-bounce {
+
+    0%,90% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+
+    40% {
+        box-shadow: 0 0 0 8px rgba(255, 0, 0, 0);
+    }
 }
 
 

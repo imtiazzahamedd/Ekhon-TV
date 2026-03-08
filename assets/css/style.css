@@ -88,7 +88,8 @@ ul,
 ol {
     list-style: none;
 }
-ul{
+
+ul {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -107,11 +108,59 @@ ul{
 
 /* navbar */
 .navbar-logo {
-    width: 60%;
+    width: 43%;
     height: auto;
 }
 
+.header-list {
+    margin-left: -95px;
+    height: 100%;
+}
 
+.header-list ul {
+    height: 100%;
+    align-items: stretch;
+}
+
+.header-list ul li {
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+}
+
+.header-list ul li.active {
+    color: var(--primary);
+    border-bottom: 4px solid var(--primary);
+}
+
+.form-control {
+    background-color: #f3f4f6;
+    border: none;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #f3f4f6;
+}
+
+/* Remove default search "x" button */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+.bi {
+    font-weight: 600 !important;
+    -webkit-text-stroke: 0.5px;
+}
+
+.bi-search {
+    font-weight: 600 !important;
+    -webkit-text-stroke: 0.9px;
+}
 
 
 

@@ -51,9 +51,9 @@
             <div class="col-7 d-none d-md-block">
                 <div class="header-list d-none d-md-block">
                     <ul>
-                        <li class="title-1s active"><i class="bi bi-house-door"></i>&nbsp; মূল পাতা</li>
-                        <li class="title-1s"><i class="bi bi-clock"></i>&nbsp; সাম্প্রতিক</li>
-                        <li class="title-1s"><i class="bi bi-camera-video"></i>&nbsp; ভিডিও</li>
+                        <li class="title-nav active"><i class="bi bi-house-door"></i>&nbsp; মূল পাতা</li>
+                        <li class="title-nav"><i class="bi bi-clock"></i>&nbsp; সাম্প্রতিক</li>
+                        <li class="title-nav"><i class="bi bi-camera-video"></i>&nbsp; ভিডিও</li>
                     </ul>
                 </div>
             </div>
@@ -72,14 +72,14 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <p class="datetime-big"></p>
-                <section class="mt-3 category">
+                <p class="datetime-big card-white mb-3"></p>
+                <section class="card-white category">
                     <h1 class="title-2 mb-3 ps-1">দেশে এখন</h1>
 
                     <div class="category-menu">
                         <!-- Economy Accordion -->
-                        <div class="menu-item mb-2">
-                            <div class="d-flex justify-content-between align-items-center py-1 cursor-pointer"
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between align-items-center cursor-pointer"
                                 data-bs-toggle="collapse" href="#economySub" role="button">
                                 <span class="title-2">অর্থনীতি</span>
                                 <i class="bi bi-chevron-right small"></i>
@@ -101,13 +101,13 @@
                         </div>
 
                         <!-- Politics (Single Item) -->
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">রাজনীতি</a>
                         </div>
 
                         <!-- International (Accordion) -->
-                        <div class="menu-item mb-2">
-                            <div class="d-flex justify-content-between align-items-center py-2 cursor-pointer"
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between align-items-center cursor-pointer"
                                 data-bs-toggle="collapse" href="#intlSub" role="button">
                                 <span class="title-2">বিদেশে এখন</span>
                                 <i class="bi bi-chevron-right small"></i>
@@ -125,31 +125,31 @@
                             </div>
                         </div>
 
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">এখন জনপদ</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">আইন ও আদালত</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">এখন মাঠে</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">অপরাধ</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">আন্তর্জাতিক বাণিজ্য</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">বিশেষ প্রতিবেদন</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">পরিবেশ ও জলবায়ু</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">বাজার</a>
                         </div>
-                        <div class="menu-item py-2">
+                        <div class="menu-item">
                             <a href="#" class="title-2 d-block">তথ্য-প্রযুক্তি</a>
                         </div>
                     </div>
@@ -258,13 +258,108 @@
             </div>
         </section>
         <!-- body -->
-        <section class="container mx-auto row g-3 align-items-center">
-            <div class="col-md-4">
+        <section class="container mx-auto row g-3 align-items-center mt-4">
+            <div class="col-md-2 d-none d-md-block">
                 <section>
+                    <div class="card-white mb-3">
+                        <p class="datetime-big"></p>
+                    </div>
+                    <div class="card-white category-menu cm-big d-flex flex-column gap-2">
+                        <div class="menu-item pic-story">
+                            <a href="#" class="title-2 d-block"><i class="bi bi-camera-reels-fill"></i>&nbsp;&nbsp; ছবির
+                                গল্প</a>
+                        </div>
+                        <!-- Economy Accordion -->
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between align-items-center cursor-pointer"
+                                data-bs-toggle="collapse" href="#economySub" role="button">
+                                <span class="title-2">অর্থনীতি</span>
+                                <i class="bi bi-chevron-right small"></i>
+                            </div>
+                            <div class="collapse show pt-2" id="economySub">
+                                <ul class="subcategory-list border-start ms-2 ps-3 flex-column align-items-start">
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">শিল্প-কারখানা</a>
+                                    </li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">আমদানি-রপ্তানি</a>
+                                    </li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">ব্যাংকপাড়া</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">বাজেট</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">পুঁজিবাজার</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">মুদ্রাবাজার</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">পরিষেবা</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">চুক্তি</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">ই-কমার্স</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">ক্রিপ্টো</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                </section>
+                        <!-- Politics (Single Item) -->
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">রাজনীতি</a>
+                        </div>
+
+                        <!-- International (Accordion) -->
+                        <div class="menu-item">
+                            <div class="d-flex justify-content-between align-items-center cursor-pointer"
+                                data-bs-toggle="collapse" href="#intlSub" role="button">
+                                <span class="title-2">বিদেশে এখন</span>
+                                <i class="bi bi-chevron-right small"></i>
+                            </div>
+                            <div class="collapse pt-2" id="intlSub">
+                                <ul class="subcategory-list border-start ms-2 ps-3 flex-column align-items-start">
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ১</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ২</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ৩</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ৪</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ৫</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ৬</a></li>
+                                    <li class="py-1"><a href="#" class="title-3 text-secondary">উপবিভাগ ৭</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">এখন জনপদ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">আইন ও আদালত</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">এখন মাঠে</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">অপরাধ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">আন্তর্জাতিক বাণিজ্য</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">বিশেষ প্রতিবেদন</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">পরিবেশ ও জলবায়ু</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">বাজার</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">তথ্য-প্রযুক্তি</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">স্বাস্থ্য</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">শিক্ষা</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="title-2 d-block">বিনোদন</a>
+                        </div>
+                    </div>
             </div>
-            <div class="col-md-8"></div>
+        </section>
+        </div>
+        <div class="col-md-10"></div>
         </section>
     </main>
 

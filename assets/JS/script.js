@@ -1,4 +1,4 @@
-const datetime = document.querySelector('.datetime');
+const datetimes = document.querySelectorAll('.datetime');
 
 function getBengaliPeriod(hours) {
     if (hours >= 5 && hours < 12) return 'সকাল';
@@ -16,13 +16,15 @@ function time() {
         minute: '2-digit',
         hour12: true
     });
-    datetime.innerHTML = `${period} ${timeStr}`;
+    datetimes.forEach(el => {
+        el.innerHTML = `${period} ${timeStr}`;
+    });
 }
 
 time();
 setInterval(time, 1000);
 
-const datetimeBig = document.querySelector('.datetime-big');
+const datetimesBig = document.querySelectorAll('.datetime-big');
 function timeBig() {
     const now = new Date();
     const period = getBengaliPeriod(now.getHours());
@@ -39,9 +41,10 @@ function timeBig() {
         hour12: true
     });
 
-    datetimeBig.innerHTML = `<span class="big-time">${period} ${timeStr}</span> <br> <span class="big-date">${dateStr}</span>`;
+    datetimesBig.forEach(el => {
+        el.innerHTML = `<span class="big-time">${period} ${timeStr}</span> <br> <span class="big-date">${dateStr}</span>`;
+    });
 }
-
 
 timeBig();
 setInterval(timeBig, 1000);

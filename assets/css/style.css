@@ -204,32 +204,6 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--summery);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Custom Menu Styling */
 .category-menu .subcategory-list {
     border-color: #dee2e6 !important;
@@ -237,7 +211,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .category-menu .title-2 {
-    font-size: 16px;
     color: #000;
 }
 
@@ -255,13 +228,32 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
-[data-bs-toggle="collapse"][aria-expanded="true"] .bi-chevron-down {
-    transform: rotate(180deg);
-    transition: transform 0.3s;
-}
 
-[data-bs-toggle="collapse"] .bi-chevron-down {
-    transition: transform 0.3s;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* end */

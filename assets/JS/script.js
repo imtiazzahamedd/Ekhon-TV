@@ -21,3 +21,27 @@ function time() {
 
 time();
 setInterval(time, 1000);
+
+const datetimeBig = document.querySelector('.datetime-big');
+function timeBig() {
+    const now = new Date();
+    const period = getBengaliPeriod(now.getHours());
+
+    const dateStr = now.toLocaleDateString('bn-BD', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    const timeStr = now.toLocaleTimeString('bn-BD', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+    });
+
+    datetimeBig.innerHTML = `<span class="big-time">${period} ${timeStr}</span> <br> <span class="big-date">${dateStr}</span>`;
+}
+
+
+timeBig();
+setInterval(timeBig, 1000);

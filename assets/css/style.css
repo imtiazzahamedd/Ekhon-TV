@@ -6,6 +6,10 @@
     --ticker-bg: #111827;
 }
 
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
 /* headings */
 .title-1 {
     font-size: 24px;
@@ -160,12 +164,15 @@ input[type="search"]::-webkit-search-results-decoration {
 .bi-search {
     -webkit-text-stroke: 0.9px;
 }
-.bi-list{
+
+.bi-list {
     -webkit-text-stroke: 1.3px;
 }
+
 @keyframes wave-bounce {
 
-    0%,90% {
+    0%,
+    90% {
         box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
     }
 
@@ -173,6 +180,29 @@ input[type="search"]::-webkit-search-results-decoration {
         box-shadow: 0 0 0 8px rgba(255, 0, 0, 0);
     }
 }
+
+/* offcanvas */
+.offcanvas {
+    background-color: #f7f8f9;
+}
+
+.datetime-big {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.big-time {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.big-date {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--summery);
+}
+
 
 
 

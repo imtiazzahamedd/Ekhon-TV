@@ -17,47 +17,54 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg shadow">
-            <div class="container">
-                <a class="navbar-brand" href="#"> <img src="https://ekhon.tv/logo.png" alt="" class=""> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active title-1s" aria-current="page" href="#"><i
-                                    class="bi bi-house-door"></i>&nbsp; মূল পাতা</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link title-1s" href="#"><i class="bi bi-clock"></i>&nbsp; সাম্প্রতিক</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link title-1s" href="#"><i class="bi bi-camera-video"></i>&nbsp; ভিডিও</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <div class="input-group">
-                           <div class="position-relative">
-                            <input type="search" class="form-control rounded-pill search-input" placeholder="যা খুঁজতে চান..
-                            " aria-label="Search">
-                            <i class="bi bi-search position-absolute top-50 translate-middle-y"></i>
-                           </div>
-                        </div>
-                    </form>
+    <header class="shadow py-md-3 pt-2">
+        <nav class="row g-3 align-items-center container mx-auto">
+            <div class="col-md-2 col-12">
+                <section class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <img src="https://ekhon.tv/logo.png" alt="" class="navbar-logo">
+                    </div>
+                    <div class="d-md-none d-block">
+                        <i class="bi bi-list-nested"></i>
+                    </div>
+                </section>
+            </div>
+            <div class="col-6">
+                <div class=" d-none d-md-block">
+                   <ul>
+                    <li><i class="bi bi-house-door"></i>&nbsp; মূল পাতা</li>
+                    <li><i class="bi bi-clock"></i>&nbsp; সাম্প্রতিক</li>
+                    <li><i class="bi bi-camera-video"></i>&nbsp; ভিডিও</li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="position-relative d-none d-md-block">
+                    <input type="search" class="form-control" placeholder="যা খুঁজতে চান..">
+                    <i class="bi bi-search position-absolute translate-middle-y end-0 pe-3 top-50"></i>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
+    </main>
 
     <!-- Bootstrap Js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
+    <!-- Custom JS -->
+    <script src="assets/JS/script.js"></script>
 </body>
 
 </html>

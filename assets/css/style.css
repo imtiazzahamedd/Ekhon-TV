@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Hind Siliguri', sans-serif;
+    background-color: #f9fafb;
 }
 
 /* headings */
@@ -228,7 +229,90 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
+/* share market ticker */
+.ticker-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 55px;
+}
 
+.share {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 700;
+    padding: 0 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.share-ticker-container {
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.share-ticker {
+    display: flex;
+    gap: 30px;
+    padding: 0 30px;
+    margin: 0;
+    animation: ticker-scroll 10s linear infinite;
+    width: max-content;
+}
+
+.share-ticker:hover {
+    animation-play-state: paused;
+}
+
+.stock-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stock-info {
+    line-height: 1.2;
+}
+
+.stock-name {
+    font-size: 13px;
+    font-weight: 800;
+    margin: 0;
+    color: #000;
+    white-space: nowrap;
+}
+
+.stock-value {
+    font-size: 11px;
+    margin: 0;
+    color: #4b5563;
+    white-space: nowrap;
+}
+
+.bi-arrow-down {
+    color: #ff3b30;
+    font-size: 1.1rem;
+    font-weight: 900 !important;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 
 

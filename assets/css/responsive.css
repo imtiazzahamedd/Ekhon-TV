@@ -4,17 +4,6 @@
         height: auto;
     }
 
-    .live p {
-        background-color: #ff0000;
-        color: white;
-        padding: 2px 15px;
-        font-size: 13px;
-        animation: wave-bounce 2s infinite ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .datetime {
         font-size: 12px;
         font-weight: 600;

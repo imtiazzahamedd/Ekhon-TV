@@ -86,13 +86,14 @@ ul {
 
 /* --- Header & Nav --- */
 .navbar-logo {
-    width: 70px;
+    width: 43%;
     height: auto;
 }
 
 .header-list ul {
     height: 100%;
     align-items: stretch;
+    margin-left: -100px;
 }
 
 .header-list ul li {
@@ -255,6 +256,17 @@ input[type="search"]::-webkit-search-cancel-button {
 .bi-arrow-down {
     color: #ff3b30;
     font-size: 1.1rem;
+}
+
+.live p {
+    background-color: #ff0000;
+    color: white;
+    padding: 2px 15px;
+    font-size: 13px;
+    animation: wave-bounce 2s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes ticker-scroll {

@@ -116,7 +116,29 @@ img {
     line-clamp: 2;
     -webkit-line-clamp: 2;
 }
-
+/* border */
+.b-left{
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+}
+/* more */
+.more{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: var(--secondary);
+    cursor: pointer;
+}
+.more:hover{
+    text-decoration: underline black;
+}
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 /* navbar */
 .navbar-logo {
     width: 43%;

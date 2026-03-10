@@ -14,7 +14,12 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
     background-color: var(--bg-light);
 }
-
+header{
+    backdrop-filter: blur(10px) saturate(150%);
+}
+main{
+    margin-top: 100px;
+}
 h1,
 h2,
 h3,
@@ -87,6 +92,13 @@ img {
     font-weight: 600;
     color: var(--text-muted);
     cursor: pointer;
+}
+.title-sm-news {
+    font-size: 15px;
+    cursor: pointer;
+}
+.title-sm-news:hover {
+    text-decoration: underline black;
 }
 
 /* summary text */
@@ -414,7 +426,20 @@ input[type="search"]::-webkit-search-cancel-button {
 .border-red {
     border:1px solid red !important;
 }
-
-
+/* small newws section */
+.list-category {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+.time-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: -8px;
+    margin-top: -8px;
+}
+.sm-news-margin{
+    margin-bottom: 15px;
+}
 
 /* end */

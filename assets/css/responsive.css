@@ -29,4 +29,7 @@
     .share{
         padding: 0 7px;
     }
+    main {
+        margin-top: 65px;
+    }
 }

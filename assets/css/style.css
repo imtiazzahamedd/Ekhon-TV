@@ -478,5 +478,32 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-bottom: 0px;
     margin-top: 20px;
 }
+/* video and img */
+.bi-play-fill{
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* end */

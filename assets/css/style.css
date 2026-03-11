@@ -151,7 +151,13 @@ img {
     border-left: 4px solid var(--dark);
     padding-left: 10px;
 }
-
+/* bar */
+.bar{
+    width: 100%;
+    height: 1px;
+    background-color: #d1d5db;
+    margin-top: -15px;
+}
 /* more */
 .more {
     display: flex;

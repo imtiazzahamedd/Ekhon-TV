@@ -185,14 +185,26 @@ img {
     height: auto;
     border-radius: 0;
 }
+.left-sidebar {
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+.header-list {
+    height: 100%;
+}
 
 .header-list ul {
     height: 100%;
+    display: flex;
     align-items: stretch;
     margin-left: -100px;
+    margin-bottom: 0;
 }
 
 .header-list ul li {
+    display: flex;
+    align-items: center;
     border-bottom: 4px solid transparent;
     transition: all 0.2s;
 }
